@@ -1,0 +1,673 @@
+<html>
+  <head>
+    <title>Tax Invoice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+      * {
+        box-sizing: border-box;
+        font-weight: 500;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+      }
+
+      @media print {
+        #print-btn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-10">
+    <div class="main p-5 w-[890px] mx-auto">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-red-600">K. H. R. F FABRICATORS</h1>
+        <p class="text-sm">
+          Specialist & Manufacture of : Sheet Metal Works, Raceway, Ladder,
+          Perforated Tray, Raceway Box, Z-Section, Control Panel Disk, Relay
+          Panel & All Kinds of Fabrication Works
+        </p>
+        <p class="text-sm">
+          Gala No. 015, Adarsh Hsg. Society, Masjid Gali, Netaji Nagar, Khadi
+          No. 03, 90 Ft. Road, Sakinaka, Mumbai - 400 072.
+        </p>
+        <p class="text-sm">
+          E-mail ID : rafatullahkhan9968@gmail.com / khrffabricators@gmail.com
+        </p>
+        <p class="text-sm">Mob. : 8652142442</p>
+      </div>
+      <div class="flex justify-between pt-1 border-t border-black">
+        <div>
+          <p>GSTIN : 27GVNPK1419M1Z1</p>
+        </div>
+        <div class="text-right">
+          <p>State : Maharashtra Code : 27</p>
+        </div>
+      </div>
+      <table class="information-table border border-black w-full text-left">
+        <tr>
+          <td
+            rowspan="4"
+            class="pl-2 p-1 w-[50px] pt-3"
+            style="vertical-align: top"
+          >
+            M/s.
+          </td>
+          <td class="pr-3">
+            <input
+              type="text"
+              class="outline-none w-full px-1 outline-none px-1 border-b border-black pt-1"
+            />
+          </td>
+          <td class="w-[320px] border-l border-black pl-2">
+            <b>Invoice No.</b>
+            <input
+              type="text"
+              class="outline-none px-1 border-b border-black"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="pr-3">
+            <input
+              type="text"
+              class="outline-none w-full px-1 outline-none px-1 border-b border-black pt-1"
+            />
+          </td>
+          <td class="border-l border-black pl-2">
+            <b>Invoice Date</b>
+            <input
+              type="text"
+              class="outline-none px-1 border-b border-black"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="pr-3">
+            <input
+              type="text"
+              class="outline-none w-full px-1 outline-none px-1 border-b border-black pt-1"
+            />
+          </td>
+          <td class="border-l border-black pl-2">
+            <b>Challan No.</b>
+            <input
+              type="text"
+              class="outline-none px-1 border-b border-black"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="pr-3">
+            <input
+              type="text"
+              class="outline-none w-full px-1 outline-none px-1 border-b border-black pt-1"
+            />
+          </td>
+          <td class="border-l border-black pl-2">
+            <b>Challan Date</b>
+            <input
+              type="text"
+              class="outline-none px-1 border-b border-black"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="pr-3 pt-2 pl-2" colspan="2">
+            <div class="flex gap-[2px] pb-2">
+              <div class="flex w-[45%]">
+                <span class="whitespace-nowrap text-[14px] mr-1"
+                  >Party GST No.</span
+                >
+                <input
+                  type="text"
+                  class="outline-none px-1 border-b border-black flex-1 w-full"
+                />
+              </div>
+              <div class="flex w-[30%] pl-1">
+                <span class="whitespace-nowrap">State :</span>
+                <input
+                  type="text"
+                  class="outline-none px-1 border-b border-black flex-1 w-full"
+                />
+              </div>
+              <div class="flex w-[25%] pl-2">
+                <span>Code</span>
+                <input
+                  type="text"
+                  class="outline-none px-1 border-b border-black flex-1 w-full"
+                />
+              </div>
+            </div>
+          </td>
+          <td class="border-l border-black pl-2">
+            <b> Vehicle No.</b>
+            <input
+              type="text"
+              class="outline-none px-1 border-b border-black"
+            />
+          </td>
+        </tr>
+      </table>
+      <table class="w-full border border-black mt-1">
+        <thead>
+          <tr>
+            <th class="border border-black p-1 w-[50px]">Sr. No.</th>
+            <th class="border border-black p-1">Particulars</th>
+            <th class="border border-black p-1 w-[80px]">HSN Code</th>
+            <th class="border border-black p-1 w-[80px]">Quantity</th>
+            <th class="border border-black p-1 w-[80px]">Rate</th>
+            <th class="border border-black p-1 w-[120px]">Amount Rs.</th>
+            <th class="border border-black p-1 w-[50px]">P.</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black border-r-transparent">Total</td>
+            <td class="border border-black">
+              <input
+                type="text"
+                class="outline-none border-none w-full px-1 text-right pr-2"
+              />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black border-r-transparent">SGST</td>
+            <td class="border border-black">
+              <input
+                type="text"
+                class="outline-none border-none w-full px-1 text-right pr-2"
+                value="9%"
+              />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black border-r-transparent">CGST</td>
+            <td class="border border-black">
+              <input
+                type="text"
+                class="outline-none border-none w-full px-1 text-right pr-2"
+                value="9%"
+              />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr class="h-8 border border-black">
+            <td colspan="3">
+              <div class="flex gap-[4px] w-full px-2">
+                <b>Rupees in Words</b>
+                <input
+                  type="text"
+                  class="outline-none border-b border-black flex-1 w-full px-1"
+                />
+              </div>
+            </td>
+            <td class="border border-black">IGST</td>
+            <td class="border border-black">
+              <input
+                type="text"
+                class="outline-none border-none w-full px-1 text-right pr-2"
+                value="9%"
+              />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+            <td class="border border-black">
+              <input type="text" class="outline-none border-none w-full px-1" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="h-9 px-2">
+              <input
+                type="text"
+                class="outline-none border-b border-black w-full px-1"
+              />
+            </td>
+            <td colspan="2" class="border border-black">GR. TOTAL</td>
+            <td class="border border-black"></td>
+            <td class="border border-black"></td>
+          </tr>
+          <tr>
+            <td colspan="3" class="border border-black">
+              <div class="flex">
+                <div class="w-[75%] p-2 text-left font-normal text-sm">
+                  “I/we hereby certify that my/our Registration under this GST
+                  Act 2017 is in force on the date in which the sale of the
+                  goods specified in this Tax Invoice is made by me/us and that
+                  the transaction of sale covered by this Tax Invoice has been
+                  effected by me/us and it shall be accounted for in the
+                  turnover of sale while filling my/our return and the due tax
+                  if any, payable on the sale has been paid or shall be paid.”
+                </div>
+                <div
+                  class="border-l border-black w-[25%] flex items-end justify-center pb-2"
+                >
+                  <b class="text-md">Common Seal</b>
+                </div>
+              </div>
+            </td>
+            <td
+              colspan="4"
+              class="border border-black"
+              style="vertical-align: top"
+            >
+              <div class="text-center mb-auto pt-2">
+                <b class="text-md text-red-600"> For K. H. R. F. FABRICATORS </b>
+              </div>
+              <div class="text-center mt-[80px]">
+                <b class="text-md"> Proprietor </b>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        id="print-btn"
+        class="border p-2 rounded mt-2 cursor-pointer bg-blue-500 w-full text-white"
+      >
+        Print
+      </button>
+    </div>
+    <script>
+      const button = document.querySelector("#print-btn");
+      button.onclick = () => {
+        window.print();
+      };
+    </script>
+  </body>
+</html>
